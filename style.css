@@ -23,6 +23,9 @@ body {
 
 
 }
+p {
+    overflow-y: auto;
+}
 .btn {
     /* styling the buttens */
     background-color: var(--dark);
@@ -35,6 +38,7 @@ body {
 }
 img {
     max-width: 100%;
+    
 }
 
 .wrapper {
@@ -96,7 +100,7 @@ img {
     grid-area: showcase;
     min-height: 400px;
     background: url(./pic/main-pic.jpg);
-    background-position: fixed;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
