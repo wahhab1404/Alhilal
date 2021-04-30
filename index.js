@@ -1,7 +1,8 @@
 let t1 ;
 let t2 ;
 let t3 ;
-
+let v ;
+const checkpoint = 600; 
 
 function toggle(){  //to toggle the states . if the pargoh is hidden or not (it is hidden by def from CSS t is = 0 )
     if (t1==1){ // if it is shown
@@ -36,3 +37,35 @@ function toggle3(){
         return t3=1;
     }
 }
+
+function toggleV(){  
+    if (v==1){ 
+        document.getElementById('ul').style.display='none';
+        document.getElementById('mobile').style.display='block';
+        console.log('one item appear');
+        document.getElementById('mobile').innerText='موقع نادي الهلال';
+      
+        
+        return v=0; // 
+    } else {
+      
+
+        document.getElementById('ul').style.display='flex';
+        document.getElementById('mobile').style.display='non';
+        console.log('normal nav should appeare');
+        document.getElementById('mobile').innerText='x';
+        
+        return v=1;
+    }
+}
+
+//  Animate the Info Box using event listener
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll >= checkpoint) {
+    opacity = 0 + currentScroll / checkpoint;
+  } else {
+    opacity = 0;
+  }
+  document.querySelector(".info").style.opacity = opacity;
+});

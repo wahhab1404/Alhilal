@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al Hilal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap" rel="stylesheet">
 
@@ -15,8 +16,8 @@
 <body>
     <div class="wrapper">
         <!-- Navgation -->
-        <nav class="main-nav">
-            <ul>
+        <nav class="main-nav" id="main-nav">
+            <ul id="ul">
                 <li><a href="#" class="nav-menu nav1">الرئيسية</a></li>
                 <li><a href="#info" class="nav-menu"> عن النادي </a></li>
                 <li><a href="#players" class="nav-menu">اللاعبين</a></li>
@@ -30,6 +31,9 @@
                     </a></li>
 
             </ul>
+        </nav>
+        <nav  id="mobile" onclick="toggleV()">
+            <h2>موقع نادي الهلال</h2>
         </nav>
         <!-- Top container -->
         <div class="top-container" id="h1">
@@ -138,14 +142,14 @@
         <div class="players-div">
             <h1 class='title' id="players">اللاعبين</h1>
             <div class="cards-container">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="./pic/salman al farag.jpg" alt="" srcset="" class="avatar">
                     <h1>سلمان الفرج</h1>
                     <h4>لاعب خط وسط</h4>
                     <h3> (مواليد 1 أغسطس 1989)، هو لاعب كرة قدم سعودي. يلعب في مركز الوسط مع نادي الهلال
                         والمنتخب السعودي.</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://www.the-afc.com/img/image/upload/t_l7/v1573612531/t286mmhppcf3derecs8t" alt=""
                         srcset="" class="avatar">
                     <h1>محمد البريك</h1>
@@ -153,7 +157,7 @@
                     <h3>محمد البريك (مواليد 15 سبتمبر 1992)، لاعب كرة قدم سعودي، يلعب في نادي الهلال السعودي، والمنتخب
                         السعودي لكرة القدم.</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://so3ody.s3.amazonaws.com/images/2/350-630/9120939028714.jpg" alt="" srcset=""
                         class="avatar">
                     <h1>ياسر الشهراني</h1>
@@ -161,7 +165,7 @@
                     <h3>ياسر الشهراني (مواليد 25 مايو 1992م) هو لاعب كرة قدم سعودي. يلعب مع نادي الهلال السعودي في مركز
                         الدفاع، كما يلعب في المنتخب السعودي ..</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://arriyadiyah.com/media/thumb/99/1c/800_62d4970d5c.jpg" alt="" srcset=""
                         class="avatar">
                     <h1>علي البليهي</h1>
@@ -169,15 +173,15 @@
                     <h3>علي آل بليهي (مواليد 21 نوفمبر 1989) هو لاعب كرة قدم سعودي يلعب لنادي الهلال والمنتخب السعودي
                         لكرة القدم</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://www.alkhaleejlive.com/wp-content/uploads/2019/11/%D8%A3%D9%86%D8%AF%D8%B1%D9%8A%D9%87-%D9%83%D8%A7%D8%B1%D9%8A%D9%88-2.jpg"
-                        alt="" srcset="" class="avatar">
+                        alt="" srcset="" class="avatar" >
                     <h1>اندري كاريللو</h1>
                     <h4>لاعب خط وسط</h4>
                     <h3>هو لاعب كرة قدم بيروفي يلعب في مركز الجناح والمهاجم الثاني مع نادي الهلال في دوري المحترفين
                         السعودي ومنتخب بيرو لكرة القدم.</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://arabic.sport360.com/wp-content/uploads/2020/04/eerrrrrrrrrrrrrrrrrrrrrrr.jpg"
                         alt="" srcset="" class="avatar">
                     <h1>عبدالله عطيف</h1>
@@ -185,7 +189,7 @@
                     <h3>بد الله إبراهيم عطيف (مواليد 3 أغسطس 1992)، هو لاعب كرة قدم سعودي. يلعب في مركز الوسط مع نادي
                         الهلال والمنتخب السعودي.</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://www.almrsal.com/wp-content/uploads/2020/02/%D9%85%D8%AD%D9%85%D8%AF-%D9%83%D9%86%D9%88%D9%88%D9%88%D9%88%D9%88%D9%88%D9%88%D9%88%D9%88.jpeg"
                         alt="" srcset="" class="avatar">
                     <h1>محمد كنو</h1>
@@ -193,14 +197,14 @@
                     <h3>محمد إبراهيم كنو (مواليد 22 سبتمبر 1994)، هو لاعب كرة قدم سعودي. يلعب في مركز الوسط مع نادي
                         الهلال والمنتخب السعودي.</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://arabic.sport360.com/wp-content/uploads/2021/02/imagick-4.jpg" alt="" srcset=""
                         class="avatar">
                     <h1>سالم الدوسري</h1>
                     <h4>لاعب خط وسط</h4>
                     <h3>هو لاعب كرة قدم سعودي يلعب في مركز الجناح مع الهلال ومنتخب السعودية لكرة القدم</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://saudileague.com/wp-content/uploads/2020/11/%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A.jpg"
                         alt="" srcset="" class="avatar">
                     <h1>صالح الشهري</h1>
@@ -208,7 +212,7 @@
                     <h3>من مواليد 1993 م، هو لاعب كرة قدم سعودي يلعب في خانة الهجوم في نادي الهلال. بدأ مسيرته مع نادي
                         الأهلي. </h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="https://www.greentidekw.com/wp-content/uploads/2019/10/%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D9%85%D8%B9%D9%8A%D9%88%D9%81-e1576059674747.jpg"
                         alt="" srcset="" class="avatar">
                     <h1>عبدالله المعيوف</h1>
@@ -222,6 +226,10 @@
     </div>
     <!-- wrapper ends-->
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

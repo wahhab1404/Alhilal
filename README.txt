@@ -11,7 +11,7 @@ Project is created with :
 * JavaScript
 
 ## Future plans:
-* Make it more responseve for mobile and tablets.
+* Make it more responseve for mobile and tablets.(DONE)
 * Add Englsih version.
 * Add like buttuns.
 * Adding APIs news.
