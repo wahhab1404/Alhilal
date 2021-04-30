@@ -12,6 +12,6 @@ Project is created with :
 
 ## Future plans:
 * Make it more responseve for mobile and tablets.(DONE)
-* Add Englsih version.
+* Add English version.
 * Add like buttuns.
 * Adding APIs news.
