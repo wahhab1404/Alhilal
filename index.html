@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <!-- Navgation -->
         <nav class="main-nav" id="main-nav">
             <ul id="ul">
@@ -25,14 +25,14 @@
                 <li><a href="#" class="nav-menu">
                         <div class="search">
                             <input type="text" name="ابحث هنا" id="search" placeholder="ابحث في الموقع"
-                                class='search-box' value="">
-                            <button class="search-button">ابحث</button>
+                                class='search-box' value="look">
+                            <button class="search-button" id='searchBut'>ابحث</button>
                         </div>
                     </a></li>
 
             </ul>
         </nav>
-        <nav  id="mobile" onclick="toggleV()">
+        <nav id="mobile" onclick="toggleV()">
             <h2>موقع نادي الهلال</h2>
         </nav>
         <!-- Top container -->
@@ -175,7 +175,7 @@
                 </div>
                 <div class="card" data-aos="fade-up">
                     <img src="https://www.alkhaleejlive.com/wp-content/uploads/2019/11/%D8%A3%D9%86%D8%AF%D8%B1%D9%8A%D9%87-%D9%83%D8%A7%D8%B1%D9%8A%D9%88-2.jpg"
-                        alt="" srcset="" class="avatar" >
+                        alt="" srcset="" class="avatar">
                     <h1>اندري كاريللو</h1>
                     <h4>لاعب خط وسط</h4>
                     <h3>هو لاعب كرة قدم بيروفي يلعب في مركز الجناح والمهاجم الثاني مع نادي الهلال في دوري المحترفين
@@ -220,16 +220,161 @@
                     </h4>
                 </div>
             </div>
+            <section class="matches">
+                <h1>المباريات القادمه</h1>
+                <div class="match-container" data-aos="fade-up">
+                    <div class="home-box">
+                        <img src="" alt="" srcset="" class="t-logo" id='th-logo-0'>
+                        <h1 id="t-home0">Home</h1>
+                        <h5 id="g-home0"></h5>
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="match-info">
+                        <div class="m-date">
+                            <h3>تاريخ المباراة</h3>
+                            <h4 id="date0">date</h4>
+                        </div>
+                        <div class="m-ref">
+                            <h3>البطولة </h3>
+                            <p id="league-0">League</p>
+                        </div>
+                        <div class="m-plg">
+                            <h3>الملعب</h3>
+                            <h5 id="plg-0">Arena</h5>
+                        </div>
+                    </div>
+                    <div class="away-box">
+                        <h1 id="t-away0">Away</h1>
+                        <img src="" alt="" class="t-logo" id='ta-logo-0'>
+                        <h5 id="g-home1"></h5>
+
+                    </div>
+                </div>
+                <div class="match-container" data-aos="fade-up">
+                    <div class="home-box">
+                        <img src="" alt="" srcset="" class='t-logo' id='th-logo-1'>
+                        <h1 id="t-home1">Home</h1>
+                        <h5 id="g-home1"></h5>
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="match-info">
+                        <div class="m-date">
+                            <h3>تاريخ المباراة</h3>
+                            <h4 id="date1">date</h4>
+                        </div>
+                        <div class="m-ref">
+                            <h3>البطولة </h3>
+                            <p id="league-1">League</p>
+                        </div>
+                        <div class="m-plg">
+                            <h3>الملعب</h3>
+                            <h5 id="plg-1">Arena</h5>
+                        </div>
+                    </div>
+                    <div class="away-box">
+                        <h1 id="t-away1">Away</h1>
+                        <img src="" alt="" srcset="" class='t-logo' id='ta-logo-1'>
+                        <h5 id="g-away1"></h5>
+
+                    </div>
+                </div>
+                <div class="match-container" data-aos="fade-up">
+                    <div class="home-box">
+                        <img src="" alt="" class='t-logo' id='th-logo-2'>
+                        <h1 id="t-home2">Home</h1>
+                        <h5 id="g-home2"></h5>
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="match-info">
+                        <div class="m-date">
+                            <h3>تاريخ المباراة</h3>
+                            <h4 id="date2">date</h4>
+                        </div>
+                        <div class="m-ref">
+                            <h3>البطولة </h3>
+                            <p id="league-2">League</p>
+                        </div>
+                        <div class="m-plg">
+                            <h3>الملعب</h3>
+                            <h5 id="plg-2">Arena</h5>
+                        </div>
+                    </div>
+                    <div class="away-box">
+                        <h1 id="t-away2">Away</h1>
+                        <!-- <img src="/Alhilal/pic/logo.png" alt="" class='t-logo' id='th-logo-2'> -->
+                        <h5 id="g-home2"></h5>
+                        <img src="" alt="" id='ta-logo-2' class="t-logo">
+                    </div>
+                </div>
+                <div class="match-container" data-aos="fade-up">
+                    <div class="home-box">
+                        <img src="/Alhilal/pic/logo.png" alt="" srcset="" class='t-logo' id='th-logo-3'>
+                        <h1 id="t-home3">Home</h1>
+                        <h5 id="g-home3"></h5>
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="match-info">
+                        <div class="m-date">
+                            <h3>تاريخ المباراة</h3>
+                            <h4 id="date3">date</h4>
+                        </div>
+                        <div class="m-ref">
+                            <h3>البطولة </h3>
+                            <p id="league-3">League</p>
+                        </div>
+                        <div class="m-plg">
+                            <h3>الملعب</h3>
+                            <h5 id="plg-3">Arena</h5>
+                        </div>
+                    </div>
+                    <div class="away-box">
+                        <h1 id="t-away3">Away</h1>
+                        <img src="" alt="" class='t-logo' id='ta-logo-3'>
+                        <h5 id="g-away3"></h5>
+
+                    </div>
+                </div>
+                <div class="match-container" data-aos="fade-up">
+                    <div class="home-box">
+                        <img src="" alt="" srcset="" class='t-logo' id='th-logo-4'>
+                        <h1 id="t-home4">Home</h1>
+                        <h5 id="g-home4"></h5>
+                    </div>
+                    <div class="match-info">
+                        <div class="m-date">
+                            <h3>تاريخ المباراة</h3>
+                            <h4 id="date4">date</h4>
+                        </div>
+                        <div class="m-ref">
+                            <h3>البطولة </h3>
+                            <p id="league-4">League</p>
+                        </div>
+                        <div class="m-plg">
+                            <h3>الملعب</h3>
+                            <h5 id="plg-4">Arena</h5>
+                        </div>
+                    </div>
+                    <div class="away-box">
+                        <h1 id="t-away4">Away</h1>
+                        <img src="" alt="" class='t-logo' id='th-logo-1'>
+                        <h5 id="g-home1"></h5>
+                        <img src="" alt="" src="" id='ta-logo-4' class="t-logo">
+
+                    </div>
+                </div>
+            </section>
         </div>
-        <!-- FOOTRT -->
+        <!-- FOOTER -->
         <footer>By | Abdulwahhab &copy 2021</footer>
     </div>
     <!-- wrapper ends-->
     <script src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- <script src="/Alhilal/search.js"></script> -->
+    <script src="./API.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

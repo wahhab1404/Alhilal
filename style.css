@@ -272,12 +272,7 @@ p{
     transform-origin: right;
     border-radius: 0;
 }
-/* .mobile{
-    min-width: 100%;
-    text-align: center;
-    text-decoration: none;
-    
-} */
+
 /*------------------------------------------------[ Plyers Card Hover ]------------------------------------------------*/
 .card:hover{
     transition: transform 100ms ease-in;
@@ -289,6 +284,58 @@ p{
     width: 20px;
     border-radius: 3px;
 }
+
+
+/* ----------------------------------------------{ Matchs Section }------------------------------------------------ */
+ .matches{
+     height: 100vh;
+     background-color: #004e98;
+     display: grid;
+     padding: 1vh;
+     grid-template-rows: repeat(5,1fr);
+     margin-top: 1vh;
+     padding: 15vh;
+ }
+ .match-container{
+     display: grid;
+     grid-gap: 50px;
+     grid-template-columns: repeat(3,1fr);
+     direction: rtl;
+     height: 15VH;
+     width: 100%;
+     /* background-color: #ebebeb; */
+     color: #001233;
+     align-items: center;
+     padding: 5px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+ .match-info{
+     height: 90%;
+     width: 50vw;
+     background-color: #e2e2e2;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content:space-around;
+     background-image: linear-gradient();
+     border-radius: 3vh;
+     
+ }
+.t-logo{
+    height: 100PX;
+}
+.home-box, .away-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
 
 footer{
     color: floralwhite;
@@ -348,6 +395,16 @@ footer{
     img{
         width: 100%;
     }
+    .t-logo{
+        height: 60PX;
+    }
+    .match-container{
+        max-width: 100vh;
+        display: flex;
+    }
+    .matches{
+        width: 100%;
+    }
 }
 
 
@@ -359,11 +416,3 @@ footer{
     }
 
 }
-/* @media screen and ( max-width: 1200px) and (min-width:949px){
-
-    .cards-container{
-        grid-template-columns: repeat(4, 1fr);
-        padding: 1;
-    }
-
-} */
